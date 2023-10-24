@@ -1,0 +1,846 @@
+/*reset CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+    --dark: #605856;
+    --primary: #1C6E8C;
+    --secondary: #274156;
+    --BG: #FBFCFF;
+    --BG-text: #D0CCD0;
+    --BG-variation: #F2F2F2;
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: var(--BG-variation);
+  font-family: 'Noto Sans', sans-serif;
+}
+
+select:focus{
+  background-color: var(--BG-variation);
+}
+
+/*make the scrollbar disapear*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1{
+  color: var(--secondary);
+}
+
+/* Start login */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--BG);
+}
+form {
+    background-color: var(--BG);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+p {
+    color: var(--secondary);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: var(--BG-variation);
+}
+input[type="submit"] {
+    background-color: var(--primary);
+    color: var(--BG);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 3%;
+}
+
+.register-button{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 3%;
+  width: 94%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.register-button:hover {
+    background-color: var(--secondary);
+}
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: var(--BG-variation);
+  resize: none  ;
+}
+
+input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: var(--BG-variation);
+}
+input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+/* Add some basic styles to the buttons */
+.buttons button {
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin: 0 3%;
+}
+
+
+/* Add a hover effect to the buttons */
+.buttons button:hover {
+    background-color: var(--secondary);
+}
+
+label{
+    color: var(--dark-blue);
+    color: var(--secondary);
+}
+
+/*Start footer*/
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) ;
+  margin-top: 40px;
+  background-color: var(--BG);
+  height: 10%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.contact {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.contact h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--secondary);
+}
+
+.social-media {
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.social-media a {
+  margin-left: 20px;
+  font-size: 48px;
+  color: var(--secondary);
+}
+
+/*End footer*/
+
+
+/*Start header*/
+
+.header .logo a{
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 14px;
+  line-height: 18px;
+  word-wrap: break-word;
+  border-radius: 32px;
+  width: 20px;
+}
+
+.header .element a{
+  text-transform: uppercase;
+}
+
+.header .logo a:hover{
+  color: var(--secondary);
+}
+
+.header .logo .profil{
+  border-radius: 50%;
+}
+
+.header .logo .profil:hover {
+  background-color: var(--primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header .logo .profil:hover a {
+  color: var(--BG);
+  
+}
+
+.header .logo{
+  width: 100px;
+}
+
+.header {
+  width: calc(100% - 48px);
+  height: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+  border-radius: 24px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 36px;
+  display: inline-flex;
+}
+
+ .logo.container {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.logo {
+  text-align: center;
+  color: var(--secondary);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+} 
+
+.logo img{
+  width:  100px;  
+  height: auto;
+}
+
+.menu {
+  flex: 1 1 0;
+  height: 34px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+  display: flex;
+}
+
+.menu div {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.menu li {
+  text-align: center;
+  color: #1C6E8C;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+  list-style: none;
+}
+
+.menu div li a {
+  text-decoration: none;
+  color: #1C6E8C;
+  font-size: 14px;
+  font-family: 'Noto sans';
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word
+}
+
+.menu div li a:hover {
+    font-weight: bold; /* Texte en gras au survol */
+    font-size: larger;
+    transition: font-size 0.3s, font-weight 0.3s; 
+}
+
+.logo {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.logo div {
+  padding: 8px;
+  border-radius: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.comment,
+.user {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+  line-height: 18px;
+  word-wrap: break-word;
+  color: #1C6E8C
+}
+
+
+/*end header*/
+
+/*Start vueJob*/
+
+.body-job{
+  padding: 3%;
+}
+
+.h2-job-head{
+  color: var(--secondary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.job-banner {
+  background-color: var(--BG);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 46.5%;
+  margin-top: 20px;
+}
+
+.job-banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.job-banner:not(:first-child) {
+  margin-top: 20px;
+}
+
+.job-banner h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.job-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.show-more {
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+.show-more:hover {
+  background-color: var(--secondary);
+}
+
+/*End vueJob*/
+
+/*Start vue Home*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-panel{
+    background-color: var(--BG);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 70%;
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.home-panel-btn{
+    background-color: var(--primary);
+    color: var(--BG);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+
+.pagination{
+  text-align: center;
+  margin-top: 20px;
+}
+.pagination .nbPage{
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.pagination span{
+  color: var(--secondary);
+  font-size: 20px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.home-panel-btn:hover {
+  background-color: var(--secondary);
+}
+
+.home-panel-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+}
+
+
+.home-panel-txt{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 150%;
+}
+
+.home-panel H1{
+  text-align: left;
+  line-height: 150%;
+  color: var(--secondary);
+}
+
+/*fin home*/
+
+/*Start vue company*/
+
+.body-company{
+  padding: 3%;
+}
+
+.body-company .buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.body-company .buttons button:hover {
+    background-color: var(--secondary);
+}
+
+.job-banner-2 {
+  background-color: var(--BG);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.job-banner-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.job-banner-2:not(:first-child) {
+  margin-top: 20px;
+}
+
+.job-banner-2 h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.job-banner-2 p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.manage-adds{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  align-self: flex-end;
+  text-decoration: none;
+}
+
+/*start vue admin*/
+
+.body-admin{
+  padding: 3%;
+}
+
+.body-admin .pagination i{
+  width: 20px;
+}
+
+.list-users .admin-table-body{
+  background-color: var(--BG);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.list-users .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  margin-top: 1% ;
+}
+
+.list-users .admin-table thead {
+  background-color: var(--BG-variation);
+}
+
+.list-users .admin-table th {
+  text-align: left;
+  padding: 12px;
+}
+
+.list-users .admin-table td {
+  border: 1px solid var(--BG-variation);
+  padding: 12px;
+}
+
+.list-users .admin-table .admin-table-body:nth-child(even) {
+  background-color: var(--BG-variation);
+}
+
+.list-users .admin-table button {
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-users button{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.body-admin .list-users .button{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.list-users .admin-table button:hover {
+  background-color: var(--secondary);
+}
+
+
+.add-company{
+  padding-top: 3%;
+}
+
+.list-adds button{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.body-admin .list-adds .button{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 1.5%;
+}
+
+.list-companies .admin-table-body{
+  background-color: var(--BG);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.list-companies .admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  margin-top: 1% ;
+}
+
+.list-companies .admin-table thead {
+  background-color: var(--BG-variation);
+}
+
+.list-companies .admin-table th {
+  text-align: left;
+  padding: 12px;
+}
+
+.list-companies .admin-table td {
+  border: 1px solid var(--BG-variation);
+  padding: 12px;
+}
+
+.list-companies .admin-table .admin-table-body:nth-child(even) {
+  background-color: var(--BG-variation);
+}
+
+.list-companies .admin-table button {
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-companies button{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.list-companies{
+  margin-top: 3%;
+}
+
+.list-adds{
+  margin-top: 3%;
+}
+
+.body-admin .list-companies .button{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.list-companies .admin-table button:hover {
+  background-color: var(--secondary);
+}
+/*détail des annonces*/
+
+
+.details{
+  background-color: var(--BG);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 100%;
+}
+
+.details-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.details h3{
+  color: var(--secondary);
+}
+
+.details-content{
+  background-color: var(--BG);  
+  height: 45%;
+  width: 45%;
+  margin-top: 20px;
+}
+
+.btn-apply{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/*sort start*/
+
+.list-companies .sort,
+.list-users .sort,
+.list-adds .sort,
+.body-job .sort{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.body-admin .list-companies .sort form,
+.body-admin .list-adds .sort form,
+.body-admin .list-users .sort form,
+.body-job .sort .sort-form{
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  background-color: var(--BG);
+  padding: 0px;
+  margin: 0px;
+  box-shadow: none;
+}
+
+.body-admin .list-companies .sort button,
+.body-admin .list-adds .sort form button,
+.body-admin .list-users .sort form button,
+.body-job .sort form button{
+  background-color: var(--primary);
+  color: var(--BG);
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 30px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.body-admin .list-companies .sort button:hover,
+.body-admin .list-users .sort form button:hover,
+.body-admin .list-adds .sort form button:hover,
+.body-job .sort form button:hover{
+  background-color: var(--secondary);
+}
+
+/*Sort end*/
