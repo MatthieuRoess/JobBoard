@@ -2,6 +2,14 @@
 
 Bienvenue dans le projet annonce d'emplois, une plateforme d'offres d'emplois.
 
+https://github.com/MatthieuRoess/JobBoard/assets/123086572/5accb5bb-f8f4-4bbc-81a7-d2b9d6e935ed
+
+
+
+https://github.com/MatthieuRoess/JobBoard/assets/123086572/a091b39a-fb7d-42df-b009-0101a8b731ed
+
+
+
 ## Objectif du Projet
 
 L'objectif principal de ce projet est de créer une application qui offre une expérience utilisateur agréable, en facilitant la recherche et la publication d'offres d'emploi.
