@@ -1,4 +1,4 @@
-# ProjetAnnonceEmplois
+# Job Board
 
 Bienvenue dans le projet annonce d'emplois, une plateforme d'offres d'emplois.
 
